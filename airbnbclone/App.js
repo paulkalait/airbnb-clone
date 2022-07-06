@@ -17,12 +17,18 @@ import {
   View,
 } from 'react-native';
 import HomeScreen from './src/screens/Home';
+import Post from './src/components/Post';
+import feed from './assets/data/feed';
+
+const post = feed[0];
+
 
 const App = () => {
   return (
     <>
     <SafeAreaView>
-    <HomeScreen />
+    { /* <HomeScreen /> */}
+    <Post post={post} />
     </SafeAreaView>
     </>
   );

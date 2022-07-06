@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     width: '70%',
     marginLeft: 25,
   },
-  button:{
+  button: {
     backgroundColor: 'white',
     width: 200,
     marginLeft: 25,
@@ -22,13 +22,13 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 10,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
-  buttonText:{
+  buttonText: {
     fontSize: 16,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
-  searchButton:{
+  searchButton: {
     backgroundColor: 'white',
     //will make same width as screen size and subtract the margin on the left and right.
     width: Dimensions.get('screen').width - 20,
@@ -42,9 +42,9 @@ const styles = StyleSheet.create({
     top: 20,
     zIndex: 999,
   },
-  searchButtonText:{
+  searchButtonText: {
     fontSize: 16,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 });
 
