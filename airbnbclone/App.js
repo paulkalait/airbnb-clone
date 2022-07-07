@@ -16,11 +16,11 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import SearchResults from './src/screens/SearchResults'
+import SearchResults from './src/screens/SearchResults';
 import HomeScreen from './src/screens/Home';
 import Post from './src/components/Post';
 import feed from './assets/data/feed';
-
+import SearchDestination from './src/screens/SearchDestination';
 //this data will be feed in as properties in the Post component as post
 const post = feed[0];
 
@@ -30,8 +30,9 @@ const App = () => {
       <SafeAreaView>
         {/* <HomeScreen /> */}
         {/*  Post is the name of my component, it is not highlighted green*/}
-         {/* <Post post={post} /> */}
-         <SearchResults />
+        {/* <Post post={post} /> */}
+        {/*  <SearchResults /> */}
+        <SearchDestination />
       </SafeAreaView>
     </>
   );
