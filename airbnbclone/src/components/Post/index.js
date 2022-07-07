@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './style.js';
 
 const Post = ({post}) => {
-
   return (
     <View style={styles.container}>
       {/* Image */}
@@ -14,11 +13,13 @@ const Post = ({post}) => {
         }}
       />
       {/* bed and bedroom */}
-      <Text style={styles.bedrooms}>{post.bed} bed {post.bedroom} bedroom</Text>
+      <Text style={styles.bedrooms}>
+        {post.bed} bed {post.bedroom} bedroom
+      </Text>
       {/* Description*/}
       <Text style={styles.description} numberOfLines={2}>
         {' '}
-       {post.type}. {post.title}
+        {post.type}. {post.title}
       </Text>
       {/* old and new price*/}
       <Text style={styles.prices}>
