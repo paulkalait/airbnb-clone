@@ -21,13 +21,13 @@ const Router = () => {
         />
 
         <Stack.Screen
-          name={'SearchDestination'}
+          name={'SearchDestinaton'}
           component={SearchDestination}
           //   to display different title
           options={{title: 'Search your destination'}}
         />
         <Stack.Screen
-          name={'guests screen'}
+          name={'guests-screen'}
           component={Guests}
           //   to display different title
           options={{title: 'How many people?'}}

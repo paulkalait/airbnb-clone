@@ -22,6 +22,42 @@ const HomeTabNavigator = () => {
           ),
         }}
       />
+      <Tab.Screen
+        name={'Saved'}
+        component={HomeScreen}
+        options={{
+          tabBarIcon: ({color}) => (
+            <FontAwesome name="heart-o" size={25} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name={'Airbnb'}
+        component={HomeScreen}
+        options={{
+          tabBarIcon: ({color}) => (
+            <FontAwesome5 name="airbnb" size={25} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name={'Messages'}
+        component={HomeScreen}
+        options={{
+          tabBarIcon: ({color}) => (
+            <Feather name="message-square" size={25} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name={'profile'}
+        component={HomeScreen}
+        options={{
+          tabBarIcon: ({color}) => (
+            <EvilIcons name="user" size={25} color={color} />
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
 };
